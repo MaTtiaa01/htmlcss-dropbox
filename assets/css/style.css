@@ -37,11 +37,24 @@ body{
     justify-content: flex-end;
 }
 
-.btn{
+.btn_head{
     background-color: var(--db-button);
     padding: 0.5rem 1rem;
     color: var(--db-lighter);
     border: var(--db-button);
+}
+
+.container_70{
+    width: 70%;
+    margin: auto;
+}
+
+.flex_column{
+    flex-direction: column;
+}
+
+img{
+    max-width: 100%;
 }
 /* #endregion utilities */
 
@@ -51,10 +64,12 @@ body{
 header{
    width: 100%;
    position: fixed;
+   background-color: var(--db-lighter);
+    z-index: 999;
 }
 
 header .row{
-    padding: 2rem;
+    padding: 1.5rem;
     }
 
 header .col_6{
@@ -68,5 +83,33 @@ header .item{
 
 /* #region main */
 
+main{
+    padding-top: 5rem;
+}
+main .container_fluid{
+    background-color: var(--db-prymary);
+    position: relative;
+}
+ main h1{
+    font-weight: 900;
+    font-size: 60px;
+    padding: 1rem 0;
+ }
 
+ main .flex_column > .item{
+    margin-bottom: 2rem;
+ }
+
+ main img{
+    position: absolute;
+    right: 3rem;
+    top:40%;
+ }
+
+ main .btn_main{
+    background-color: var(--db-button);
+    padding: 0.7rem 1rem;
+    color: var(--db-lighter);
+    border: var(--db-button);
+ }
 /* #endregion main */
