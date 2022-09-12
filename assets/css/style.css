@@ -184,7 +184,7 @@ main .container_60 h2{
 
 .plane .col_4{
     border: 1px solid var(--db-checkbox);
-
+    padding-right: 0.2rem;
 }
 
 .plane i{
