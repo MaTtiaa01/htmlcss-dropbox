@@ -29,6 +29,7 @@ body{
 
 .row{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .col_6{
@@ -36,8 +37,9 @@ body{
     display: flex;
 }
 .col_4{
-    width: calc((100% / 12) * 4);
+    width: calc(((100% - 4rem) / 12) * 4);
     display: flex;
+    
 }
 
 
@@ -72,6 +74,15 @@ img{
 .inline_block{
     display: inline-block;
 }
+
+
+/* .border_bottom{
+    border-bottom: 2px solid var(--db-checkbox);
+}
+
+.border_right{
+    border-right: 2px solid var(--db-checkbox);
+} */
 /* #endregion utilities */
 
 
@@ -157,7 +168,59 @@ main .container_60 h2{
  #checkbox_left{
     margin-right: 4rem;
  }
+ 
+.plane{
+    
+    margin-top: 2.5rem;
+    column-gap: 2rem;
+}
 
+.plane .plane_for{
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+}
 
+.plane .col_4{
+    border: 1px solid var(--db-checkbox);
 
+}
+
+.plane i{
+    margin-right: 0.8rem;
+}
+
+.plane .flex_column .item{
+    padding-left: 2rem;
+}
+
+main .plane_name{
+    margin-top: 2rem;
+}
+main .plane_price{
+    font-weight: bolder;
+}
+.plane .user_count{
+    margin-top: 2rem;
+}
+
+.plane .included{
+    color: var(--db-button);
+}
+
+.plane .plane_date{
+    color: var(--db-checkbox);
+}
+
+.plane .btn_main{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.plane hr{
+    width: 30%;
+    margin-left: 20px;
+    margin-bottom: 6rem;
+    margin-top: 2rem;
+}
 /* #endregion main */
