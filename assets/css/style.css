@@ -16,7 +16,7 @@ body{
     --db-button: #0057FF;
     --db-secondary:#5F0428;
     --db-checkbox:#E3E3E5;
-
+    --db-grey: #626161;
 
 }
 
@@ -36,12 +36,29 @@ body{
     width: calc((100% / 12) * 6);
     display: flex;
 }
+.col_3{
+    width: calc((100%  / 12) * 3);
+    display: flex;
+}
 .col_4{
     width: calc(((100% - 4rem) / 12) * 4);
     display: flex;
-    
 }
 
+.col_5{
+    width: calc((100%  / 12) * 5);
+    display: flex;
+}
+
+.col_8{
+    width: calc((100%  / 12) * 8);
+    display: flex;
+}
+
+.col_9{
+    width: calc((100%  / 12) * 9);
+    display: flex;
+}
 
 
 .flex_end{
@@ -74,6 +91,7 @@ img{
 .inline_block{
     display: inline-block;
 }
+
 
 
 /* .border_bottom{
@@ -127,7 +145,7 @@ main .container_fluid{
     margin-bottom: 2rem;
  }
 
- main img{
+ main .container_fluid img{
     position: absolute;
     right: 3rem;
     top:40%;
@@ -140,7 +158,7 @@ main .container_fluid{
     border: var(--db-button);
  }
 
- main .container_60{
+ main .padding_{
     margin-top: 17rem;
  }
 
@@ -223,4 +241,45 @@ main .plane_price{
     margin-bottom: 6rem;
     margin-top: 2rem;
 }
+/* start enterprise */
+
+main .enterprise{
+    margin-top: 4rem;
+    border: 1px solid var(--db-checkbox);
+}
+
+main .enterprise .section_head{
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--db-checkbox);
+}
+
+main .section_head i{
+    margin-right: 0.8rem;
+}
+
+.enterprise .row{
+    padding: 1.5rem;
+}
+
+.enterprise .col_9{
+    padding-right: 2rem;
+}
+
+#didascalia_enterprise{
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.enterprise .col_9 p{
+    color: var(--db-grey);
+}
+
+/* start find partner */
+
+.find_partner{
+    margin-top: 2rem;
+}
+
+
 /* #endregion main */
