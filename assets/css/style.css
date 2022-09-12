@@ -50,8 +50,8 @@ body{
     display: flex;
 }
 
-.col_8{
-    width: calc((100%  / 12) * 8);
+.col_7{
+    width: calc((100%  / 12) * 7);
     display: flex;
 }
 
@@ -263,7 +263,7 @@ main .section_head i{
 }
 
 .enterprise .col_9{
-    padding-right: 2rem;
+    padding-right: 3rem;
 }
 
 #didascalia_enterprise{
@@ -279,6 +279,30 @@ main .section_head i{
 
 .find_partner{
     margin-top: 2rem;
+}
+
+.find_partner .col_5{
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+.find_partner p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: var(--db-grey);
+}
+
+.find_partner .col_5 h3{
+    font-weight: 900;
+    font-size: 25px;
+}
+
+#enterprise_btn{
+   padding: 0.8rem; 
+   border: 1px solid var(--db-grey);
+   background-color: var(--db-lighter);
+   color: var(--db-grey);
+   font-size: 18px;
 }
 
 
