@@ -373,12 +373,14 @@ main .call_to_action h3{
 
 
 /* start faq */
-
+main .faq{
+    margin-bottom: 6rem;
+}
 main .faq h2{
     padding-top: 6rem;
     font-weight: 900;
     font-size: 30px;
-    padding-bottom: 6rem;
+    
 }
 
 
@@ -426,9 +428,19 @@ footer .upper_footer span{
 }
 
 footer .lower_footer hr{
-    width: 20%;
-    margin-bottom: 6rem;
-    
-    
+    width: 10%;
+    margin-bottom: 2rem;
 }
+
+footer .languages{
+    font-size: 10px;
+   color: var(--db-grey);
+}
+
+footer .languages i{
+    margin-right: 0.5rem;
+}
+
+
+
 /* #endregion footer */
