@@ -54,6 +54,11 @@ a{
     width: calc(((100% - 4rem) / 12) * 4);
     display: flex;
 }
+.col_4_normal{
+    width: calc((100% / 12) * 4);
+    display: flex;
+}
+
 
 .col_5{
     width: calc((100%  / 12) * 5);
@@ -125,6 +130,8 @@ button:hover{
     width: 100%;
     height: 100vh;
 }
+
+
 /* #region header */
 
 header{
@@ -371,30 +378,22 @@ main .our_clients a{
 /* start company */
 
 main .company .col_6 svg{
-    width: 50vw;
-    height: 40vh;
-    
-}
-main .company .designt svg {
-    padding: 3rem;
+    width: 55vw;
+    height: 45vh;
     
 }
 
 
-main .company .arizona svg {
-    padding: 3rem;
-    
-}
+
+
 
 main .company .florida svg {
-    padding: 3rem;
-   
+    padding-top: 6rem;
+    padding-left: 2rem;
+   /* dando un padding generale non funziona */
 }
 
-main .company .topps svg {
-    padding: 3rem;
-    
-}
+
 
 
 
@@ -419,12 +418,49 @@ main .company .topps{
   
 }
 
+main .company_middle{
+    padding: 2rem;
+    background-color: var(--db-light);
+}
+
+main .company_middle svg{
+    width: 15vw;
+}
+main .company_middle hr{
+    width: 30%;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+#middle_p{
+    margin-bottom: 2rem;
+}
+
+main .company .col_6{
+    padding: 2.5rem;
+}
+
+main .company .bicycle{
+    background-color: var(--db-darkred);
+}
+
+main .company .hearst{
+    background-color: var(--db-button);
+}
 
 
+main .company .lonely{
+    background-color: var(--db-blue);
+}
 
 
+main .company .clear_channel{
+    background-color: var(--db-yellow);
+}
 
-
+main .company{
+    margin-bottom: 5.3rem;
+}
 
 
 
