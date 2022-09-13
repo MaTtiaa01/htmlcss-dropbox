@@ -94,17 +94,14 @@ img{
     display: inline-block;
 }
 
-
-
-/* .border_bottom{
-    border-bottom: 2px solid var(--db-checkbox);
+.border_bottom{
+    border-bottom: 1px solid;
 }
 
-.border_right{
-    border-right: 2px solid var(--db-checkbox);
-} */
-/* #endregion utilities */
 
+.flex{
+    display: flex;
+}
 
 /* #region header */
 
@@ -347,6 +344,12 @@ main .our_clients a{
 
 /* start company */
 
+
+
+
+
+/* start call to action */
+
 main .call_to_action{
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -359,20 +362,66 @@ main .call_to_action h3{
 }
 
 #call_to_action_btn{
-   padding: 0.3rem 1rem;
+   padding: 0.5rem 1.5rem;
    background-color: var(--db-light);
    border: 1px solid var(--db-light);
    margin-left: 8rem; 
    margin-top: 1rem;
-   font-size: 10px;
+   font-size: 15px;
    color: var(--db-grey);
 }
 
 
+/* start faq */
 
-/* start call to action */
+main .faq h2{
+    padding-top: 6rem;
+    font-weight: 900;
+    font-size: 30px;
+    padding-bottom: 6rem;
+}
+
+
+main .frequent_faq{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+main .frequent_faq i{
+    margin-left: 10rem;
+}
 
 
 
 
 /* #endregion main */
+
+
+
+/* #region footer */
+
+footer{
+    background-color: var(--db-dark);
+}
+
+footer .container_70{
+    color: var(--db-lighter);
+    padding: 4rem;
+    justify-content: space-between;
+}
+
+footer .upper_footer h2{
+    margin-bottom: 2rem;
+    font-weight: 900;
+    font-size: 20px;
+    
+}
+
+footer .upper_footer span{
+    margin-bottom: 0.8rem;
+    font-size: 10px;
+}
+/* #endregion footer */
