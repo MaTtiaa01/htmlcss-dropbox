@@ -1,0 +1,581 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+
+}
+:root{
+    --db-dark:#000000;
+    --db-lighter:#FFFFFF;
+    --db-light:#F5F5F5;
+    --db-prymary:#B4D0E7;
+    --db-button: #0057FF;
+    --db-secondary:#5F0428;
+    --db-checkbox:#E3E3E5;
+    --db-grey: #626161;
+    --db-lightblue: #0093CE;
+    --db-green: #A2D39B;
+    --db-lightgreen: #D1E9CD;
+    --db-blue: #0D2481;
+    --db-darkred: #D5001F;
+    --db-red: #FF1C1C;
+    --db-yellow: #FFD830;
+
+
+}
+
+a{
+    color: var(--db-button);
+}
+/* #region utilities */
+
+.container_fluid{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col_6{
+    width: calc((100% / 12) * 6);
+    display: flex;
+}
+.col_3{
+    width: calc((100%  / 12) * 3);
+    display: flex;
+}
+.col_4{
+    width: calc(((100% - 4rem) / 12) * 4);
+    display: flex;
+}
+.col_4_normal{
+    width: calc((100% / 12) * 4);
+    display: flex;
+}
+
+
+.col_5{
+    width: calc((100%  / 12) * 5);
+    display: flex;
+}
+
+.col_7{
+    width: calc((100%  / 12) * 7);
+    display: flex;
+}
+
+.col_9{
+    width: calc((100%  / 12) * 9);
+    display: flex;
+}
+
+
+.flex_end{
+    justify-content: flex-end;
+}
+
+.btn_head{
+    background-color: var(--db-button);
+    padding: 0.5rem 1rem;
+    color: var(--db-lighter);
+    border: var(--db-button);
+}
+
+.container_70{
+    width: 70%;
+    margin: auto;
+}
+.container_60{
+    width: 60%;
+    margin: auto;
+}
+.flex_column{
+    flex-direction: column;
+}
+
+img{
+    max-width: 100%;
+}
+
+.inline_block{
+    display: inline-block;
+}
+
+.border_bottom{
+    border-bottom: 1px solid;
+}
+
+
+.flex{
+    display: flex;
+}
+
+svg, g{
+    max-width: 100%;
+}
+
+
+
+button:hover{
+    opacity:0.8 ;
+}
+
+.container_100{
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* #region header */
+
+header{
+   width: 100%;
+   position: fixed;
+   background-color: var(--db-lighter);
+    z-index: 999;
+}
+
+header .row{
+    padding: 1.5rem;
+    }
+
+header .col_6{
+    align-items: center;
+}
+header .item{
+    margin-right: 2.5rem;
+}
+
+/* .underline:hover + .row{
+    border-bottom: 10px solid var(--db-button);
+} */
+
+/* #endregion header */
+
+/* #region main */
+
+main{
+    padding-top: 5rem;
+}
+main .container_fluid{
+    background-color: var(--db-prymary);
+    position: relative;
+}
+ main h1{
+    font-weight: 900;
+    font-size: 60px;
+    padding: 1rem 0;
+ }
+#jumbo_arrow{
+    font-size: 40px;
+    margin-top: 2rem;
+    color: var(--db-dark);
+}
+
+
+ main .flex_column > .item{
+    margin-bottom: 2rem;
+ }
+
+ main .container_fluid img{
+    position: absolute;
+    right: 3rem;
+    top:40%;
+ }
+
+ main .btn_main{
+    background-color: var(--db-button);
+    padding: 0.7rem 1rem;
+    color: var(--db-lighter);
+    border: var(--db-button);
+ }
+
+ main .padding_{
+    margin-top: 17rem;
+ }
+
+main .container_60 h2{
+    margin-bottom: 2.5rem;
+}
+
+ main .checkbox{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: 3px solid var(--db-checkbox);
+    border-radius: 50%;
+    vertical-align: middle;
+ }
+
+ main .checkbox_active{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: 5px solid var(--db-button);
+    border-radius: 50%;
+    vertical-align: middle;
+ }
+ #checkbox_left{
+    margin-right: 4rem;
+ }
+ 
+.plane{
+    
+    margin-top: 2.5rem;
+    column-gap: 2rem;
+}
+
+.plane .plane_for{
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.plane .col_4{
+    border: 1px solid var(--db-checkbox);
+    padding-right: 0.2rem;
+}
+
+.plane i{
+    margin-right: 0.8rem;
+}
+
+.plane .flex_column .item{
+    padding-left: 2rem;
+}
+
+main .plane_name{
+    margin-top: 2rem;
+}
+main .plane_price{
+    font-weight: bolder;
+}
+.plane .user_count{
+    margin-top: 2rem;
+}
+
+.plane .included{
+    color: var(--db-button);
+}
+
+.plane .plane_date{
+    color: var(--db-checkbox);
+}
+
+.plane .btn_main{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.plane hr{
+    width: 30%;
+    margin-left: 20px;
+    margin-bottom: 6rem;
+    margin-top: 2rem;
+}
+/* start enterprise */
+
+main .enterprise{
+    margin-top: 4rem;
+    border: 1px solid var(--db-checkbox);
+}
+
+main .enterprise .section_head{
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--db-checkbox);
+}
+
+main .section_head i{
+    margin-right: 0.8rem;
+}
+
+.enterprise .row{
+    padding: 1.5rem;
+}
+
+.enterprise .col_9{
+    padding-right: 3rem;
+}
+
+#didascalia_enterprise{
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.enterprise .col_9 p{
+    color: var(--db-grey);
+}
+
+/* start find partner */
+
+.find_partner{
+    margin-top: 2rem;
+}
+
+.find_partner .col_5{
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+.find_partner p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: var(--db-grey);
+}
+
+.find_partner .col_5 h3{
+    font-weight: 900;
+    font-size: 25px;
+}
+
+#enterprise_btn{
+   padding: 0.8rem; 
+   border: 1px solid var(--db-grey);
+   background-color: var(--db-lighter);
+   color: var(--db-grey);
+   font-size: 18px;
+}
+
+/* start operation */
+
+main .operation{
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+}
+
+main .operation .row{
+    gap: 2rem;
+}
+
+main .operation h2{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+main .operation h3{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* start our clients */
+
+main .our_clients{
+    margin-bottom: 4rem;
+    
+}
+
+main .our_clients h2{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+main .our_clients a{
+    font-size: 15px;
+}
+
+/* start company */
+
+main .company .col_6 svg{
+    width: 55vw;
+    height: 45vh;
+    
+}
+
+
+
+
+
+main .company .florida svg {
+    padding-top: 6rem;
+    padding-left: 2rem;
+   /* dando un padding generale non funziona */
+}
+
+
+
+
+
+
+main .company .designt{
+    background-color: var(--db-lightgreen);
+    
+}
+
+main .company .arizona{
+    background-color: var(--db-secondary);
+  
+}
+
+main .company .florida{
+    background-color: var(--db-lightblue);
+  
+}
+
+main .company .topps{
+    background-color: var(--db-red);
+  
+}
+
+main .company_middle{
+    padding: 2rem;
+    background-color: var(--db-light);
+}
+
+main .company_middle svg{
+    width: 15vw;
+}
+main .company_middle hr{
+    width: 30%;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+#middle_p{
+    margin-bottom: 2rem;
+}
+
+main .company .col_6{
+    padding: 2.5rem;
+}
+
+main .company .bicycle{
+    background-color: var(--db-darkred);
+}
+
+main .company .hearst{
+    background-color: var(--db-button);
+}
+
+
+main .company .lonely{
+    background-color: var(--db-blue);
+}
+
+
+main .company .clear_channel{
+    background-color: var(--db-yellow);
+}
+
+main .company{
+    margin-bottom: 5.3rem;
+}
+
+
+
+
+
+
+/* start call to action */
+
+main .call_to_action{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+main .call_to_action h3{
+    color: var(--db-secondary);
+    font-size: 35px;
+    font-weight: 900;
+}
+
+#call_to_action_btn{
+   padding: 0.5rem 1.5rem;
+   background-color: var(--db-light);
+   border: 1px solid var(--db-light);
+   margin-left: 8rem; 
+   margin-top: 1rem;
+   font-size: 15px;
+   color: var(--db-grey);
+}
+
+
+/* start faq */
+main .faq{
+    margin-bottom: 6rem;
+}
+main .faq h2{
+    padding-top: 6rem;
+    font-weight: 900;
+    font-size: 30px;
+    
+}
+
+
+main .frequent_faq{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+main .frequent_faq i{
+    margin-left: 10rem;
+}
+
+main .hidden{
+    display: none;
+    padding-top: 2rem;
+    padding-right: 4rem;
+    font-size: 10px;
+    
+}
+
+main .frequent_faq i:hover + .hidden{
+    display: block;
+}
+
+/* #endregion main */
+
+
+
+/* #region footer */
+
+footer{
+    background-color: var(--db-dark);
+}
+
+footer .container_70{
+    color: var(--db-lighter);
+    padding: 4rem;
+    justify-content: space-between;
+}
+
+footer .upper_footer h2{
+    margin-bottom: 2rem;
+    font-weight: 900;
+    font-size: 20px;
+    
+}
+
+footer .upper_footer span{
+    margin-bottom: 0.8rem;
+    font-size: 10px;
+}
+
+footer .lower_footer hr{
+    width: 10%;
+    margin-bottom: 2rem;
+}
+
+footer .languages{
+    font-size: 10px;
+   color: var(--db-grey);
+}
+
+footer .languages i{
+    margin-right: 0.5rem;
+    
+}
+
+
+
+/* #endregion footer */
