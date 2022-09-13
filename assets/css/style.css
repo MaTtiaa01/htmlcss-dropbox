@@ -20,7 +20,9 @@ body{
 
 }
 
-
+a{
+    color: var(--db-button);
+}
 /* #region utilities */
 
 .container_fluid{
@@ -309,7 +311,7 @@ main .section_head i{
 
 main .operation{
     margin-top: 6rem;
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
 }
 
 main .operation .row{
@@ -327,4 +329,50 @@ main .operation h3{
 }
 
 /* start our clients */
+
+main .our_clients{
+    margin-bottom: 4rem;
+    
+}
+
+main .our_clients h2{
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+main .our_clients a{
+    font-size: 15px;
+}
+
+/* start company */
+
+main .call_to_action{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+main .call_to_action h3{
+    color: var(--db-secondary);
+    font-size: 35px;
+    font-weight: 900;
+}
+
+#call_to_action_btn{
+   padding: 0.3rem 1rem;
+   background-color: var(--db-light);
+   border: 1px solid var(--db-light);
+   margin-left: 8rem; 
+   margin-top: 1rem;
+   font-size: 10px;
+   color: var(--db-grey);
+}
+
+
+
+/* start call to action */
+
+
+
+
 /* #endregion main */
