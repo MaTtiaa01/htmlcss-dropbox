@@ -103,6 +103,14 @@ img{
     display: flex;
 }
 
+svg{
+    max-width: 100%;
+}
+
+button:hover{
+    opacity:0.8 ;
+}
+
 /* #region header */
 
 header{
@@ -122,6 +130,10 @@ header .col_6{
 header .item{
     margin-right: 2.5rem;
 }
+
+/* .underline:hover header{
+    border-bottom: 2px solid var(--db-button);
+} */
 
 /* #endregion header */
 
@@ -344,6 +356,18 @@ main .our_clients a{
 
 /* start company */
 
+main .company .col_6 svg  {
+    padding-top: 100%;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+
+
+
+
+
+
 
 
 
@@ -439,6 +463,7 @@ footer .languages{
 
 footer .languages i{
     margin-right: 0.5rem;
+    
 }
 
 
