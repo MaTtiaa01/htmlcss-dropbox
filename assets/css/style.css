@@ -131,8 +131,8 @@ header .item{
     margin-right: 2.5rem;
 }
 
-/* .underline:hover header{
-    border-bottom: 2px solid var(--db-button);
+/* .underline:hover + .row{
+    border-bottom: 10px solid var(--db-button);
 } */
 
 /* #endregion header */
@@ -420,8 +420,17 @@ main .frequent_faq i{
     margin-left: 10rem;
 }
 
+main .hidden{
+    display: none;
+    padding-top: 2rem;
+    padding-right: 4rem;
+    font-size: 10px;
+    
+}
 
-
+main .frequent_faq i:hover + .hidden{
+    display: block;
+}
 
 /* #endregion main */
 
