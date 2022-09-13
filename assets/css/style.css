@@ -172,6 +172,11 @@ main .container_fluid{
     font-size: 60px;
     padding: 1rem 0;
  }
+main .jumbo_arrow{
+    font-size: 40px;
+    margin-top: 2rem;
+}
+
 
  main .flex_column > .item{
     margin-bottom: 2rem;
