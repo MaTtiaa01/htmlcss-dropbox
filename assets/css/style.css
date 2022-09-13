@@ -305,5 +305,26 @@ main .section_head i{
    font-size: 18px;
 }
 
+/* start operation */
 
+main .operation{
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+}
+
+main .operation .row{
+    gap: 2rem;
+}
+
+main .operation h2{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+main .operation h3{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* start our clients */
 /* #endregion main */
