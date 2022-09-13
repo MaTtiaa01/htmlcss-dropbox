@@ -17,6 +17,14 @@ body{
     --db-secondary:#5F0428;
     --db-checkbox:#E3E3E5;
     --db-grey: #626161;
+    --db-lightblue: #0093CE;
+    --db-green: #A2D39B;
+    --db-lightgreen: #D1E9CD;
+    --db-blue: #0D2481;
+    --db-darkred: #D5001F;
+    --db-red: #FF1C1C;
+    --db-yellow: #FFD830;
+
 
 }
 
@@ -103,14 +111,20 @@ img{
     display: flex;
 }
 
-svg{
+svg, g{
     max-width: 100%;
 }
+
+
 
 button:hover{
     opacity:0.8 ;
 }
 
+.container_100{
+    width: 100%;
+    height: 100vh;
+}
 /* #region header */
 
 header{
@@ -356,11 +370,56 @@ main .our_clients a{
 
 /* start company */
 
-main .company .col_6 svg  {
-    padding-top: 100%;
-    width: 100%;
-    aspect-ratio: 1/1;
+main .company .col_6 svg{
+    width: 50vw;
+    height: 40vh;
+    
 }
+main .company .designt svg {
+    padding: 3rem;
+    
+}
+
+
+main .company .arizona svg {
+    padding: 3rem;
+    
+}
+
+main .company .florida svg {
+    padding: 3rem;
+   
+}
+
+main .company .topps svg {
+    padding: 3rem;
+    
+}
+
+
+
+
+main .company .designt{
+    background-color: var(--db-lightgreen);
+    
+}
+
+main .company .arizona{
+    background-color: var(--db-secondary);
+  
+}
+
+main .company .florida{
+    background-color: var(--db-lightblue);
+  
+}
+
+main .company .topps{
+    background-color: var(--db-red);
+  
+}
+
+
 
 
 
