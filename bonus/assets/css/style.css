@@ -400,9 +400,9 @@ main .our_clients a{
 
 /* start company */
 
-main .company .col_6 svg{
-    width: 55vw;
-    height: 40vh;
+main .company .col_6 img{
+    width: 60vw;
+    height: 20vh;
     
 }
 
@@ -410,11 +410,7 @@ main .company .col_6 svg{
 
 
 
-main .company .florida svg {
-    padding-top: 6rem;
-    padding-left: 2rem;
-   /* dando un padding generale non funziona */
-}
+
 
 
 
@@ -446,9 +442,7 @@ main .company_middle{
     background-color: var(--db-light);
 }
 
-main .company_middle svg{
-    width: 15vw;
-}
+
 main .company_middle hr{
     width: 30%;
     margin-bottom: 3rem;
@@ -482,11 +476,16 @@ main .company .clear_channel{
 }
 
 main .company{
-    margin-bottom: 2.3rem;
+    height: 388px;
 }
 
-main .designt, main .arizona, main .florida, main .topps, main .bicycle, main .lonely, main .hearst, main .clear_channel{
-    fill: var(--db-lighter);
+
+main .designt img, main .arizona img, main .florida img, main .topps img, main .bicycle img, main .lonely img, main .hearst img, main .clear_channel img{
+    filter: invert(100%);
+}
+
+main .company_middle img{
+    width: 50%;
 }
 
 

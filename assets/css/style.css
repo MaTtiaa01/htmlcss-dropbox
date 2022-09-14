@@ -85,6 +85,7 @@ a{
 }
 
 .btn_head{
+    text-decoration: none;
     background-color: var(--db-button);
     padding: 0.5rem 1rem;
     color: var(--db-lighter);
@@ -126,7 +127,7 @@ svg, g{
 
 
 
-button:hover{
+[class^="btn"]:hover{
     opacity:0.8 ;
 }
 
@@ -147,7 +148,7 @@ header{
 
 header .row{
     padding: 1.5rem;
-    }
+}
 
 header .col_6{
     align-items: center;
@@ -155,6 +156,10 @@ header .col_6{
 header .item{
     margin-right: 2.5rem;
 }
+
+
+
+
 
 /* .underline:hover + .row{
     border-bottom: 10px solid var(--db-button);
@@ -176,29 +181,35 @@ main .container_fluid{
     font-size: 60px;
     padding: 1rem 0;
  }
-main .jumbo_arrow{
+#jumbo_arrow{
     font-size: 40px;
     margin-top: 2rem;
+    color: var(--db-dark);
 }
-.container_70 .col_8 img{
-    margin-bottom: -7rem;
- }
+
 
  main .flex_column > .item{
     margin-bottom: 2rem;
  }
 
- main .container_fluid img{
+.container_70 .col_8 img{
+    margin-bottom: -7rem;
+ }
+
+ /* main .container_fluid img{
     position: absolute;
     right: 3rem;
     top:40%;
- }
+ } */
 
  main .btn_main{
+    text-decoration: none;
     background-color: var(--db-button);
-    padding: 0.7rem 1rem;
+    padding: 0.5rem 1rem;
     color: var(--db-lighter);
     border: var(--db-button);
+    font-size: 12px;
+    
  }
 
  main .padding_{
@@ -340,7 +351,8 @@ main .section_head i{
     font-size: 25px;
 }
 
-#enterprise_btn{
+#find_partner_btn{
+    text-decoration: none;
    padding: 0.8rem; 
    border: 1px solid var(--db-grey);
    background-color: var(--db-lighter);
@@ -388,9 +400,9 @@ main .our_clients a{
 
 /* start company */
 
-main .company .col_6 svg{
-    width: 55vw;
-    height: 40vh;
+main .company .col_6 img{
+    width: 60vw;
+    height: 20vh;
     
 }
 
@@ -398,11 +410,7 @@ main .company .col_6 svg{
 
 
 
-main .company .florida svg {
-    padding-top: 6rem;
-    padding-left: 2rem;
-   /* dando un padding generale non funziona */
-}
+
 
 
 
@@ -434,9 +442,7 @@ main .company_middle{
     background-color: var(--db-light);
 }
 
-main .company_middle svg{
-    width: 15vw;
-}
+
 main .company_middle hr{
     width: 30%;
     margin-bottom: 3rem;
@@ -470,8 +476,18 @@ main .company .clear_channel{
 }
 
 main .company{
-    margin-bottom: 2.3rem;
+    height: 388px;
 }
+
+
+main .designt img, main .arizona img, main .florida img, main .topps img, main .bicycle img, main .lonely img, main .hearst img, main .clear_channel img{
+    filter: invert(100%);
+}
+
+main .company_middle img{
+    width: 50%;
+}
+
 
 
 
@@ -492,6 +508,7 @@ main .call_to_action h3{
 }
 
 #call_to_action_btn{
+    text-decoration: none;
    padding: 0.5rem 1.5rem;
    background-color: var(--db-light);
    border: 1px solid var(--db-light);
@@ -536,7 +553,11 @@ main .hidden{
 
 main .frequent_faq i:hover + .hidden{
     display: block;
+
 }
+
+
+
 
 /* #endregion main */
 
