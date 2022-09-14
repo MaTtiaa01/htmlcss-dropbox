@@ -85,6 +85,7 @@ a{
 }
 
 .btn_head{
+    text-decoration: none;
     background-color: var(--db-button);
     padding: 0.5rem 1rem;
     color: var(--db-lighter);
@@ -126,7 +127,7 @@ svg, g{
 
 
 
-button:hover{
+[class^="btn"]:hover{
     opacity:0.8 ;
 }
 
@@ -202,10 +203,13 @@ main .container_fluid{
  } */
 
  main .btn_main{
+    text-decoration: none;
     background-color: var(--db-button);
-    padding: 0.7rem 1rem;
+    padding: 0.5rem 1rem;
     color: var(--db-lighter);
     border: var(--db-button);
+    font-size: 12px;
+    
  }
 
  main .padding_{
@@ -347,7 +351,8 @@ main .section_head i{
     font-size: 25px;
 }
 
-#enterprise_btn{
+#find_partner_btn{
+    text-decoration: none;
    padding: 0.8rem; 
    border: 1px solid var(--db-grey);
    background-color: var(--db-lighter);
@@ -504,6 +509,7 @@ main .call_to_action h3{
 }
 
 #call_to_action_btn{
+    text-decoration: none;
    padding: 0.5rem 1.5rem;
    background-color: var(--db-light);
    border: 1px solid var(--db-light);
