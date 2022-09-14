@@ -69,6 +69,10 @@ a{
     width: calc((100%  / 12) * 7);
     display: flex;
 }
+.col_8{
+    width: calc((100%  / 12) * 8);
+    display: flex;
+}
 
 .col_9{
     width: calc((100%  / 12) * 9);
@@ -176,7 +180,9 @@ main .jumbo_arrow{
     font-size: 40px;
     margin-top: 2rem;
 }
-
+.container_70 .col_8 img{
+    margin-bottom: -7rem;
+ }
 
  main .flex_column > .item{
     margin-bottom: 2rem;

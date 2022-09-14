@@ -69,6 +69,10 @@ a{
     width: calc((100%  / 12) * 7);
     display: flex;
 }
+.col_8{
+    width: calc((100%  / 12) * 8);
+    display: flex;
+}
 
 .col_9{
     width: calc((100%  / 12) * 9);
@@ -183,11 +187,15 @@ main .container_fluid{
     margin-bottom: 2rem;
  }
 
- main .container_fluid img{
+.container_70 .col_8 img{
+    margin-bottom: -7rem;
+ }
+
+ /* main .container_fluid img{
     position: absolute;
     right: 3rem;
     top:40%;
- }
+ } */
 
  main .btn_main{
     background-color: var(--db-button);
