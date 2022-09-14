@@ -157,6 +157,11 @@ header .item{
     margin-right: 2.5rem;
 }
 
+header a{
+    text-decoration: none;
+    color: var(--db-dark);
+}
+
 
 
 
@@ -400,11 +405,12 @@ main .our_clients a{
 
 /* start company */
 
-main .company .col_6 img{
-    width: 60vw;
-    height: 20vh;
-    
+main .company .col_4_normal .box{
+    padding: 3rem;
+    display: flex;
+    align-items: center;
 }
+
 
 
 
@@ -453,9 +459,7 @@ main .company_middle hr{
     margin-bottom: 2rem;
 }
 
-main .company .col_6{
-    padding: 2.5rem;
-}
+
 
 main .company .bicycle{
     background-color: var(--db-darkred);
@@ -475,9 +479,7 @@ main .company .clear_channel{
     background-color: var(--db-yellow);
 }
 
-main .company{
-    height: 388px;
-}
+
 
 
 main .designt img, main .arizona img, main .florida img, main .topps img, main .bicycle img, main .lonely img, main .hearst img, main .clear_channel img{
@@ -488,9 +490,14 @@ main .company_middle img{
     width: 50%;
 }
 
+main .company .col_4{
+    flex-grow: 1;
+}
 
-
-
+main .company .box{
+    width: calc(100% / 2);
+    aspect-ratio: 1/1;
+}
 
 
 
