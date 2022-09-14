@@ -147,7 +147,7 @@ header{
 
 header .row{
     padding: 1.5rem;
-    }
+}
 
 header .col_6{
     align-items: center;
@@ -155,6 +155,10 @@ header .col_6{
 header .item{
     margin-right: 2.5rem;
 }
+
+
+
+
 
 /* .underline:hover + .row{
     border-bottom: 10px solid var(--db-button);
@@ -393,7 +397,7 @@ main .our_clients a{
 
 main .company .col_6 svg{
     width: 55vw;
-    height: 45vh;
+    height: 40vh;
     
 }
 
@@ -473,8 +477,13 @@ main .company .clear_channel{
 }
 
 main .company{
-    margin-bottom: 5.3rem;
+    margin-bottom: 2.3rem;
 }
+
+main .designt, main .arizona, main .florida, main .topps, main .bicycle, main .lonely, main .hearst, main .clear_channel{
+    fill: var(--db-lighter);
+}
+
 
 
 
@@ -539,7 +548,11 @@ main .hidden{
 
 main .frequent_faq i:hover + .hidden{
     display: block;
+
 }
+
+
+
 
 /* #endregion main */
 
