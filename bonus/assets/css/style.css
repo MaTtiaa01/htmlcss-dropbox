@@ -30,6 +30,7 @@ body{
 
 a{
     color: var(--db-button);
+    
 }
 /* #region utilities */
 
@@ -161,7 +162,9 @@ header a{
     text-decoration: none;
     color: var(--db-dark);
 }
-
+header .underline{
+    transition: all 0.5s;
+}
 header .underline:hover{
     padding-bottom: 1rem;
     border-bottom: 2px solid var(--db-button);
@@ -551,6 +554,7 @@ main .frequent_faq{
 
 main .frequent_faq i{
     margin-left: 10rem;
+    
 }
 
 main .hidden{
@@ -558,7 +562,6 @@ main .hidden{
     padding-top: 2rem;
     padding-right: 4rem;
     font-size: 10px;
-    
 }
 
 main .frequent_faq i:hover + .hidden{
@@ -611,6 +614,8 @@ footer .languages i{
     margin-right: 0.5rem;
     
 }
+
+
 
 
 
